@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 DATABASES = {
     'default': {
         'NAME': 'timesheet',
-        'ENGINE': 'sqlserver_ado',
+        'ENGINE': 'django.db.backends.mysql',
         'HOST': 'dipentimesheet.database.windows.net',
         'USER': 'dipen40',
         'PASSWORD': 'Renuka1990!',
