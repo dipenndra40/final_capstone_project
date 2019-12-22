@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'NAME': 'timesheet-db',
+        'NAME': 'timesheet',
         'ENGINE': 'sqlserver_ado',
         'HOST': 'dipentimesheet.database.windows.net',
         'USER': 'dipen40',
