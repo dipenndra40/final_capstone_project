@@ -25,7 +25,7 @@ SECRET_KEY = 'y!9j!(5w2w$gt=b%+fvlke#c6g86d0pwk%@$h4pl5hxckrz^t8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://dipentimesheet.azurewebsites.net']
 
 
 # Application definition
