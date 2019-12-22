@@ -81,31 +81,31 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'NAME': 'timesheet',
-#         'ENGINE': 'django.db.backends.mysql',
-#         'HOST': 'dipentimesheet.database.windows.net',
-#         'USER': 'dipen40',
-#         'PASSWORD': 'Renuka1990!',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
         'NAME': 'timesheet',
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'dipentimesheet.database.windows.net',
         'USER': 'dipen40',
         'PASSWORD': 'Renuka1990!',
-        'HOST': 'dipentimesheet.database.windows.net',
-        'PORT': '1433',
-
-
-        'OPTIONS': {
-            'host_is_server': True,
-            'driver': 'FreeTDS'
-        },
-    },
+    }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'sql_server.pyodbc',
+#         'NAME': 'timesheet',
+#         'USER': 'dipen40',
+#         'PASSWORD': 'Renuka1990!',
+#         'HOST': 'dipentimesheet.database.windows.net',
+#         'PORT': '1433',
+#
+#
+#         'OPTIONS': {
+#             'host_is_server': True,
+#             'driver': 'FreeTDS'
+#         },
+#     },
+# }
 
 
 # Password validation
