@@ -88,8 +88,19 @@ DATABASES = {
         'HOST': 'dipentimesheet.database.windows.net',
         'USER': 'dipen40',
         'PASSWORD': 'Renuka1990!',
+        'PORT': '1433'
     }
 }
+# Server=tcp:dipentimesheet.database.windows.net,
+# 1433;
+# Initial Catalog=timesheet;
+# Persist Security Info=False;
+# User ID=dipen40;
+# Password={your_password};
+# MultipleActiveResultSets=False;
+# Encrypt=True;
+# TrustServerCertificate=False;
+# Connection Timeout=30;
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'sql_server.pyodbc',
