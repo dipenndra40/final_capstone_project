@@ -75,10 +75,19 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'timesheet-db',
+        'ENGINE': 'sqlserver_ado',
+        'HOST': 'dipentimesheet.database.windows.net',
+        'USER': 'dipen40',
+        'PASSWORD': 'Renuka1990!',
     }
 }
 
