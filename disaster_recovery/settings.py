@@ -81,15 +81,28 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'NAME': 'timesheet',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST': 'dipentimesheet.database.windows.net',
+#         'USER': 'dipen40',
+#         'PASSWORD': 'Renuka1990!',
+#         'PORT': '1433'
+#     }
+# }
 DATABASES = {
     'default': {
+        'ENGINE': 'sql_server.pyodbc',
         'NAME': 'timesheet',
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'dipentimesheet.database.windows.net',
         'USER': 'dipen40',
         'PASSWORD': 'Renuka1990!',
-        'PORT': '1433'
-    }
+        'HOST': 'dipentimesheet.database.windows.net',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 13 for SQL Server',
+        },
+    },
 }
 # Server=tcp:dipentimesheet.database.windows.net,
 # 1433;
