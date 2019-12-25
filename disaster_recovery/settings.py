@@ -75,65 +75,13 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-# DATABASES = {
-#     'default': {
-#         'NAME': 'timesheet',
-#         'ENGINE': 'django.db.backends.mysql',
-#         'HOST': 'dipentimesheet.database.windows.net',
-#         'USER': 'dipen40',
-#         'PASSWORD': 'Renuka1990!',
-#         'PORT': '1433'
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'timesheet',
-        'USER': 'dipen40',
-        'PASSWORD': 'Renuka1990!',
-        'HOST': 'dipentimesheet.database.windows.net',
-        'PORT': '1433',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 13 for SQL Server',
-        },
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
-# Server=tcp:dipentimesheet.database.windows.net,
-# 1433;
-# Initial Catalog=timesheet;
-# Persist Security Info=False;
-# User ID=dipen40;
-# Password={your_password};
-# MultipleActiveResultSets=False;
-# Encrypt=True;
-# TrustServerCertificate=False;
-# Connection Timeout=30;
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'sql_server.pyodbc',
-#         'NAME': 'timesheet',
-#         'USER': 'dipen40',
-#         'PASSWORD': 'Renuka1990!',
-#         'HOST': 'dipentimesheet.database.windows.net',
-#         'PORT': '1433',
-#
-#
-#         'OPTIONS': {
-#             'host_is_server': True,
-#             'driver': 'FreeTDS'
-#         },
-#     },
-# }
 
-
-# Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
