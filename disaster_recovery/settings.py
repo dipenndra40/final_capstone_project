@@ -25,7 +25,7 @@ SECRET_KEY = 'y!9j!(5w2w$gt=b%+fvlke#c6g86d0pwk%@$h4pl5hxckrz^t8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["diputimesheet.azurewebsites.net"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -75,10 +75,21 @@ WSGI_APPLICATION = 'disaster_recovery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'timesheet',
+#         'HOST': 'mongodb://localhost:27017'
+#
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'timesheet',
+        'HOST': 'mongodb+srv://dipen40:Dipen1234@cluster0-vfoip.mongodb.net/test?retryWrites=true&w=majority',
+        'USER': 'dipen40',
+        'PASSWORD': 'Dipen1234'
     }
 }
 
