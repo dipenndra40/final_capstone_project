@@ -1,5 +1,5 @@
 dataclasses==0.7
-Django==2.1
+Django==2.2.13
 django-mssql==1.8
 django-mssql-backend==2.5.0
 djangotoolbox==1.8.0
